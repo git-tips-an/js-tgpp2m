@@ -1,0 +1,14 @@
+h1,
+h2 {
+  font-family: Lato;
+}
+<uef-error-summary [errors]="errors"></uef-error-summary>
+errors = [];
+if (quantity < 1) {
+    this.errors.push('Please enter at least 1 Quantity');
+}
+if (this.errors.length > 0) {
+    // Don't navigate to the next page
+} else {
+    // Navigate to the next page
+}
